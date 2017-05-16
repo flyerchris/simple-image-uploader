@@ -9,7 +9,7 @@ let server=app.listen(80,function(err){
 		console.log(err);
 		return;
 	}
-	console.log("server start at 1234");
+	console.log("server start");
 });
 io=io(server);
 io.on('connection',function(socket){
