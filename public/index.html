@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<title>Upload</title>
+	<script src="socket.io.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<input type="file" accept='image/*' id="file" onchange="readFile()"/>
+	<div id='info'></div>
+	<div id='PaintArea' style='position:relative'>
+		<canvas id='CanvasUI' style='position:absolute;left:0px;top:0px;'></canvas>
+	</div>
+	<div id='FunBtns' style="display:none">
+		<button onclick="saveImg()">save</button>
+		<button onclick="blurImg()">Blur</button>
+	</div>
+</body>
+</html>
