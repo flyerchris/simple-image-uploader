@@ -49,6 +49,10 @@ function mupEvent(evt){
 	UI.state='';
 }
 function saveImg(){
+	if(UI.state=='working'){
+		alert("pleas wait until image process finish");
+		return;
+	}
 	var i;
 	var b64=mycanvas.toDataURL();
 	for(i=0;i<60;i++){if(b64[i]==','){break;}}
